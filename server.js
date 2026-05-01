@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Health check endpoint
-app.get('/healthz', (req, res) => {
+app.get('/health', (req, res) => {
   res.set({
     'Content-Type': 'text/plain; charset=utf-8',
     'Cache-Control': 'no-store',
